@@ -4,7 +4,8 @@ const app = express();
 
 //MiddleWare
 
-app.use(express.static('/public'));
+app.use(express.static('public'));
+
 
 // Routes
 
@@ -18,6 +19,6 @@ app.get('/gallery', (request, response) => response.sendFile(__dirname + '/views
 
 app.listen(3000, ()=>{ 
 
-    console.log('Servidor activo en el puerto 3000')
+    console.log('Server active - port 3000')
   })
   
