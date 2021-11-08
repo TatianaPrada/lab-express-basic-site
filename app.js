@@ -4,7 +4,7 @@ const app = express();
 
 //MiddleWare
 
-app.use(express.static('./public'));
+app.use(express.static('/public'));
 
 // Routes
 
