@@ -4,12 +4,12 @@ const app = express();
 
 //MiddleWare
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 
 // Routes
 
-app.get('/home', (request, response) => response.sendFile(__dirname + '/views/home.html'));
+app.get('/', (request, response) => response.sendFile(__dirname + '/views/home.html'));
 
 app.get('/about', (request, response) => response.sendFile(__dirname + '/views/about.html'));
 
